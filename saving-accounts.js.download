@@ -1,0 +1,951 @@
+$(".benefit-short-card .cards-list-carousel").slick({
+	dots: !0,
+	arrows: !0,
+	infinite: !0,
+	autoplay: !0,
+	speed: 500,
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	responsive: [
+		{ breakpoint: 1024, settings: { slidesToShow: 3, dots: !1 } },
+		{ breakpoint: 767, settings: { slidesToShow: 2, dots: !0, arrows: !1 } },
+		{ breakpoint: 560, settings: { slidesToShow: 1, dots: !0, arrows: !1 } },
+	],
+});
+/* 26/02/2021 start */
+$(".benefit-card-section .benefit-itsa-carousel").slick({
+	dots: !1,
+	arrows: !0,
+	infinite: !0,
+	autoplay: !1,
+	speed: 500,
+	slidesToShow: 4,
+	slidesToScroll: 1,
+	responsive: [
+		{ breakpoint: 1024, settings: { slidesToShow: 3, dots: !1 } },
+		{ breakpoint: 767, settings: { slidesToShow: 2, dots: !0, arrows: !1 } },
+		{ breakpoint: 560, settings: { slidesToShow: 1, dots: !0, arrows: !1 } },
+	],
+});
+
+/* 26/02/2021 end */
+$(".benefit-short-card .card-list-item-carousel").slick({
+	dots: !0,
+	arrows: !0,
+	infinite: !0,
+	autoplay: !0,
+	speed: 500,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	responsive: [
+		{ breakpoint: 1024, settings: { slidesToShow: 3, dots: !1 } },
+		{ breakpoint: 767, settings: { slidesToShow: 2, dots: !0, arrows: !1 } },
+		{ breakpoint: 560, settings: { slidesToShow: 1, dots: !0, arrows: !1 } },
+	],
+});
+
+$(".banner-component .banner-slider .banner-slide .media-list").slick({
+	dots: !0,
+	arrows: !1,
+	infinite: !1,
+	autoplay: true,
+	autoplaySpeed: 5000,
+	speed: 500,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+});
+
+/* 16/06/2021 */
+$(".banner-component .banner-slider .banner-slide.full-width-slider").slick({
+	dots: !0,
+	arrows: !1,
+	infinite: !1,
+	autoplay: !1,
+	autoplaySpeed: 5000,
+	speed: 500,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	responsive: [
+		{ breakpoint: 767, settings: { adaptiveHeight: !0 } },
+	],
+});
+
+$(".banner-slider .banner-video .media-list").slick({
+	dots: !0,
+	arrows: !1,
+	infinite: !0,
+	autoplay: !0,
+	autoplaySpeed: 5000,
+	speed: 500,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 991,
+			settings: { adaptiveHeight: !1 },
+		},
+	],
+});
+$(".banner-slider .banner-multiple-video .video-right").slick({
+	dots: !0,
+	arrows: !1,
+	infinite: !0,
+	autoplay: !0,
+	autoplaySpeed: 5000,
+	speed: 500,
+	slidesToShow: 4,
+	slidesToScroll: 4,
+	responsive: [
+		{
+			breakpoint: 640,
+			settings: {
+				arrows: !1,
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			},
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				arrows: !1,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			},
+		},
+	],
+});
+
+$(".banner-slider .img-description").slick({
+	dots: !0,
+	arrows: !1,
+	infinite: !1,
+	autoplay: !1,
+	autoplaySpeed: 1000,
+	speed: 800,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 991,
+			settings: { arrows: !1 },
+		},
+	],
+});
+
+$(".customer-review-slider.single-slide").slick({
+	dots: !1,
+	arrows: !0,
+	infinite: !0,
+	autoplay: !1,
+	speed: 500,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+});
+$(".customer-review-slider.double-slide").slick({
+	dots: !1,
+	arrows: !0,
+	infinite: !0,
+	autoplay: !1,
+	speed: 500,
+	slidesToShow: 2,
+	slidesToScroll: 2,
+	responsive: [
+		{
+			breakpoint: 991,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			},
+		},
+	],
+});
+
+$(".to-apply-slider").slick({
+	dots: !0,
+	arrows: !0,
+	infinite: !0,
+	autoplay: !0,
+	speed: 500,
+	slidesToShow: 3,
+	slidesToScroll: 3,
+	responsive: [
+		{
+			breakpoint: 991,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+			},
+		},
+	],
+});
+$(".how-it-works-slider").slick({
+	dots: !0,
+	arrows: !0,
+	infinite: !0,
+	autoplay: !0,
+	speed: 500,
+	slidesToShow: 3,
+	slidesToScroll: 3,
+	responsive: [
+		{
+			breakpoint: 991,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				adaptiveHeight: !1,
+			},
+		},
+	],
+});
+$(".additional-content-slider").slick({
+	dots: !0,
+	arrows: !0,
+	infinite: !0,
+	autoplay: !0,
+	speed: 500,
+	slidesToShow: 4,
+	slidesToScroll: 4,
+	responsive: [
+		{ breakpoint: 991, settings: { slidesToShow: 2, slidesToScroll: 2 } },
+		{ breakpoint: 575, settings: { slidesToShow: 1, slidesToScroll: 1 } },
+	],
+});
+
+if ($(".special-discounts .short-card-slider").length > 0) {
+	$(".short-card-slider")
+		.not(".slick-initialized")
+		.slick({
+			dots: !0,
+			arrows: !0,
+			infinite: !1,
+			autoplay: !1,
+			speed: 500,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			responsive: [
+				{
+					breakpoint: 991,
+					settings: {
+						arrows: !1,
+						slidesToShow: 2,
+						slidesToScroll: 1,
+					},
+				},
+				{
+					breakpoint: 640,
+					settings: {
+						arrows: !1,
+						centerMode: !0,
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						centerPadding: "45px",
+					},
+				},
+			],
+		});
+}
+
+//Recomeded debit cards slider
+$(".recomeded-cards-section .cards-list").slick({
+	dots: !0,
+	arrows: !0,
+	infinite: !1,
+	autoplay: !1,
+	speed: 500,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				arrows: !1,
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			},
+		},
+		{
+			breakpoint: 640,
+			settings: {
+				arrows: !1,
+				centerMode: !0,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				centerPadding: "45px",
+			},
+		},
+	],
+});
+/* 19/04/2021 */
+$(".iMobile-slider").slick({
+	dots: !0,
+	arrows: !1,
+	infinite: !0,
+	autoplay: !0,
+	speed: 500,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+});
+/* Update 18/02/2021 */
+
+	// BreadCrumb Code 07/05/2021 start
+	var tabLength = "";
+		$(".accountNav li a").each(function (b) {
+				var a = $(".accountNav li a").length;
+				tabLength = $(".accountNav li a").length;
+				//console.log("BreadCrumb Length : "+a);
+				for (i = 0; i < $(".accountNav li a").text().length; i++) {
+					if ($(".accountNav li a").text().length > 88) {
+					$("#more-link li").removeClass("nav-dropdown");
+					/* $(".accountNav li:last-child").removeClass("last-child"); */
+					$("#moreTab").css("display","block")
+					//console.log("BreadCrumb final lenth : "+$(".accountNav li a").text().length);
+						$(".accountNav li")
+							.eq(a - 1)
+							.detach()
+							.appendTo("#dropdown-more-link ul");
+					}else{
+						/* $(".accountNav li:last-child").addClass("last-child"); */
+					}
+				}
+			});
+			if ($("#moreTab").is(':visible')) {
+				//console.log("Remove Tab Id");
+				$(".accountNav li:last-child").removeClass("last-child");				
+			}else{
+				/* if(tabLength > 1){
+					$(".accountNav li:last-child").addClass("last-child");
+					console.log("Tab Id Added..."+$(".accountNav li a").text().length);
+				} */
+			}
+						
+			$('.accountNav li.active').not(':first').removeClass("active");
+			//alert(liActive);
+			
+		// BreadCrumb Code 07/05/2021 end
+		
+		// Discalimer Code 14/07/2021 end
+			if ($(document).width() > 990){
+					$("a.modal-launcher,a.banner-modal").click(function (){
+						var target = $(this).attr("href");
+						if (target !== "null" && target !== ""){
+							$("#modal-content .modalContent").load(target, function (){
+								$("#modal-background").fadeIn("400");
+								$("#modal-content").fadeIn("600");
+								$("#modal-content,#modal-background").toggleClass("active");
+								if ($("body").hasClass("nri")){
+								leadform();
+								}
+								if ($("body").hasClass("m2i")){
+								leadform();
+								}
+								if ($("body").hasClass("myChoice")){
+								myChoice(); // insurance page banner click mychoice functionality 22/2/17 
+								}
+							});
+						}
+						return false;
+					});
+				} 
+				
+					if ($(document).width() < 990){
+					$("a.modal-launcher,a.banner-modal").click(function (){
+					var target = $(this).attr("href");
+					//window.location.href = "disc-page.html";
+					window.location.replace("/html/en/cust-disclaimer/disc-page.html?url="+target);
+					//console.log("clocked modal");
+						
+						//console.log("target : " +target);
+						//if (target !== "null" && target !== ""){
+						//	$(".disc-modal-content").load(target, function (){
+						//	console.log("content-loaded successfully");
+						//	});
+			//}         
+
+							var parent = $(".disc-modal-content");
+							var ajaxurl = getParameterByName("url");
+							//console.log("ajaxurl="+ajaxurl);
+							$.ajax({
+								url : ajaxurl,
+								success : function (data){
+										parent.html(data);
+						}
+					})
+						//console.log("done outside");
+						return false;
+					});
+				}
+
+				$("div#modal-close").click(function (){
+					$("#modal-content,#modal-background").removeClass("active"); // this is not in use because in backend it still their after close
+					$("#modal-content .modalContent .video-modal-launcher").attr("src",""); // this is not in use because in backend it still thre after close
+					//$("#modal-content,#modal-background").remove(); 
+				});
+				
+				$("#modal-close").click(function (){
+					$("#modal-background").fadeOut("600");
+					$("#modal-content").fadeOut("400");
+					$("#modal-content,#modal-background").toggleClass("active");
+					$("#modal-content .modalContent .video-modal-launcher").attr("src","");
+				});	
+		// Discalimer Code 14/07/2021 end
+		
+		// Review Section Code Validation 19/07/2021 Start
+			
+				function reviewFirstName(b) {
+					var a = /^[a-zA-Z]+$/;
+					if (b.value.match(a)) {
+						return true
+					} else {
+						alert("Please provide a valid First name. All characters should be alphabets only");
+						b.focus();
+						return false
+					}
+				}
+
+				function lastName(a) {
+					var b = /^[a-zA-Z]+$/;
+					if (a.value.match(b)) {
+						return true
+					} else {
+						alert("Please provide a valid Last name. All characters should be alphabets only");
+						a.focus();
+						return false
+					}
+				}
+
+				function ValidateEmail(a) {
+					var b = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+					if (a.value.match(b)) {
+						return true
+					} else {
+						alert("Please provide a valid email-id");
+						a.focus();
+						return false
+					}
+				}
+
+				function formValidation() {
+					var c = document.validate.firstname;
+					var a = document.validate.lastname;
+					var b = document.validate.email;
+					if (reviewFirstName(c)) {
+						if (lastName(a)) {
+							if (ValidateEmail(b)) {
+								return true
+							}
+						}
+					}
+					return false
+				}
+
+				function reviewValidation() {
+					var c = document.review.title;
+					var d = document.review.reviewtext;
+					var a = document.review.response;
+					var b = document.review.score;
+					if (titleHeading(c)) {
+						if (reviewText(d)) {
+							if (reviewStars(b)) {
+								if (mathResponse(a)) {
+									return true
+								}
+							}
+						}
+					}
+					return false
+				}
+
+				function titleHeading(a) {
+					var b = /^[a-zA-Z0-9.,%$?@#&₹!_\s]+$/;
+					if (a.value.match(b)) {
+						return true
+					} else {
+						if (a.value == "") {
+							alert("Please enter the title of your review");
+							$(".discuss-write-review").trigger("click");
+							a.focus();
+							return false
+						} else {
+							alert("Only @,#,&,?,%,$,₹,!,_..... are allowed in Title");
+							$(".discuss-write-review").trigger("click");
+							a.focus();
+							return false
+						}
+					}
+				}
+
+				function reviewText(b) {
+					var a = /^[a-zA-Z0-9.,%$?@#&₹!_\s]+$/;
+					if (b.value.match(a)) {
+						return true
+					} else {
+						if (b.value == "") {
+							alert("Please enter the review remarks");
+							$(".discuss-write-review").trigger("click");
+							b.focus();
+							return false
+						} else {
+							alert("Only @,#,&,?,%,$,!,_..... are allowed in review");
+							$(".discuss-write-review").trigger("click");
+							b.focus();
+							return false
+						}
+					}
+				}
+
+				function reviewStars(a) {
+					if (a.value == "") {
+						alert("Please Rate your experience");
+						$(".discuss-write-review").trigger("click");
+						a.focus();
+						return false
+					} else {
+						return true
+					}
+				}
+
+				function mathResponse(a) {
+					var b = /^[0-9\s]+$/;
+					if (a.value.match(b)) {
+						return true
+					} else {
+						if (a.value == "") {
+							alert("Please answer the math question");
+							$(".discuss-write-review").trigger("click");
+							a.focus();
+							return false
+						} else {
+							alert("Please enter only 0-9 characters");
+							$(".discuss-write-review").trigger("click");
+							a.focus();
+							return false
+						}
+					}
+				}
+
+
+				$("#Title").keypress(function(b) {
+					var c = $("#Title").val();
+					var a = (window.Event) ? b.which : b.keyCode;
+					if (a == 13) {
+						if (/^[a-z\s\d]*$/i.test(c)) {
+							return true
+						}
+					} else {
+						if ((a >= 39 && a <= 43) || a == 34 || a == 45 || a == 47 || (a >= 58 && a <= 62) || (a >= 91 && a <= 94) || a == 96 || (a >= 123 && a <= 127)) {
+							alert("Only @,#,&,?,%,$,₹,!,_ are allowed in Title");
+							return false
+						}
+					}
+				});
+				$("#Reviewtext").keypress(function(a) {
+					var c = $("#Reviewtext").val();
+					var b = $("#Title").val();
+					var d = (window.Event) ? a.which : a.keyCode;
+					if (b != "") {
+						if (d == 13) {
+							alert("Enter not allowed in review");
+							return false
+						} else {
+							if ((d >= 39 && d <= 43) || d == 34 || d == 45 || d == 47 || (d >= 58 && d <= 62) || (d >= 91 && d <= 94) || d == 96 || (d >= 123 && d <= 127)) {
+								alert("Only @,#,&,?,%,$,!,_ are allowed in review");
+								return false
+							}
+						}
+					} else {
+						$("#Title").focus();
+						alert("Title field should not be blank");
+						return false
+					}
+				});
+				$("#Response").keypress(function(b) {
+					var c = $("#Response").val();
+					var a = (window.Event) ? b.which : b.keyCode;
+					if ((a >= 48 && a <= 57) || a == 8 || a == 127) {
+						return true
+					} else {
+						alert("Please enter only 0-9 characters");
+						return false
+					}
+				});		
+		// Review Section Code Validation 19/07/2021 End
+		
+		//if row div does not content then remove it 25-08-21 start
+			$('.related-products .row:empty').remove();
+			/* if ($('.related-products .row').is(':empty')){
+				$(this).remove();
+			} */
+		//if row div does not content then remove it 25-08-21 end
+
+$(document).ready(function () {
+	$("#product-type-button").remove();
+	$("#product-type2-button").remove();
+	// $("select[multiple]").multiselect({
+		// columns: 1,
+		// search: false,
+		// texts: {
+			// placeholder: "Select product type",
+		// },
+	// });
+	/* 15-03-2021 start */
+	$(".review-btn").click(function () {
+		$(".review-popup-section").show();
+		$("body").addClass("no-scroll");
+	});
+	$(".review-popup-section .close").click(function () {
+		$(".review-popup-section").hide();
+		$("body").removeClass("no-scroll");
+	});
+	/* 15-03-2021 end */
+});
+/* Update end 18/02/2021 */
+
+$(window).on("load resize orientationchange", function () {
+	if ($(window).width() > 991) {
+		$(".related-products .row, .how-it-works-slider").each(function () {
+			$(this)
+				.find(".related-card-inner, .how-it-works-card-inner")
+				.equalHeights();
+		});
+	}
+	$(".comparing-cards-section .comparing-cards").each(function () {
+		$(this).find(".comparing-column .cards").equalHeights();
+	});
+	$(".comparing-cards-section .comparing-cards").each(function () {
+		$(this).find(".comparing-column .content").equalHeights();
+	});
+	$(".comparing-cards-section .comparing-cards").each(function () {
+		$(this).find(".comparing-column .rating").equalHeights();
+	});
+	$(".comparing-cards-section .comparing-cards").each(function () {
+		$(this).find(".comparing-column .apply-btn").equalHeights();
+	});
+	$(".comparing-cards-section .comparing-cards").each(function () {
+		$(this).find(".comparing-column").equalHeights();
+	});
+	$(
+		".cards-categories-section .trending-deals-slider .deal-card"
+	).equalHeights();
+	$(".discount-offer-inner .trending-deals-slider .deal-card").equalHeights();
+	$(".benefit-short-card .card-list-item-carousel .card-list").equalHeights();
+	$(".debit-cards-section .trending-deals-slider .description").equalHeights();
+});
+
+$(window).on("load", function () {
+	$(".accordion--scroll").mCustomScrollbar();
+	/* 15-03-2021 start */
+	$(".reviews--scroll").mCustomScrollbar();
+	/* 15-03-2021 end */
+});
+
+$(".additional-content-tab .nav-tabs li a").on("click", function () {
+	$(".additional-content-wrapper .slick-slider").slick("refresh");
+});
+
+$(".did-you-know-slider").slick({
+	dots: !0,
+	arrows: !0,
+	infinite: !1,
+	autoplay: !1,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 1025,
+			settings: {
+				slidesToShow: 2,
+			},
+		},
+		{
+			breakpoint: 767,
+			settings: {
+				arrows: false,
+				slidesToShow: 2,
+			},
+		},
+		{
+			breakpoint: 640,
+			settings: {
+				arrows: false,
+				slidesToShow: 1,
+				dots: true,
+				centerMode: true,
+				centerPadding: "20px",
+				infinite: true,
+			},
+		},
+	],
+});
+/* $(".related-video-slider .related-video-slider-inner").slick({
+	dots: !0,
+	arrows: !0,
+	infinite: !1,
+	autoplay: !1,
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	responsive: [
+		{
+			breakpoint: 1025,
+			settings: {
+				slidesToShow: 2,
+			},
+		},
+		{
+			breakpoint: 767,
+			settings: {
+				arrows: false,
+				slidesToShow: 2,
+			},
+		},
+		{
+			breakpoint: 640,
+			settings: {
+				arrows: false,
+				slidesToShow: 1,
+				dots: true,
+				centerMode: true,
+				centerPadding: "20px",
+				infinite: true,
+			},
+		},
+	],
+}); */
+
+/* 28/06/2021 start */
+$(".infographics-slider").slick({
+	dots: !0,
+	arrows: !0,
+	infinite: !1,
+	autoplay: !1,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+});
+
+$(".merchants-slider").slick({
+	dots: !0,
+	arrows: !0,
+	infinite: !1,
+	autoplay: !1,
+	slidesToShow: 4,
+	slidesToScroll: 4,
+
+	responsive: [
+		{
+			breakpoint: 1025,
+			settings: {
+				arrows: false,
+				slidesToShow: 3,
+			},
+		},
+		{
+			breakpoint: 767,
+			settings: {
+				arrows: false,
+				slidesToShow: 2,
+			},
+		},
+		{
+			breakpoint: 640,
+			settings: {
+				arrows: false,
+				slidesToShow: 1,
+			},
+		},
+	],
+});
+/* 28/06/2021 End */
+
+// Modifying below method on date 25-10-2021, because getting undefined error in initDatePickers() method So, 
+//it should call only when the  .starting_date class is available on page
+
+if ($(".starting_date")[0]){
+ initDatePickers();
+ }
+
+function initDatePickers() {
+	$(".starting_date").flatpickr({
+		dateFormat: "d/m/Y",
+		defaultDate: moment("01/01/1990").format("DD/MM/YYYY"),
+		minDate: moment().subtract(60, "y").format("DD/MM/YYYY"),
+		maxDate: moment().format("DD/MM/YYYY"),
+	});
+
+	$(".end_date").flatpickr({
+		dateFormat: "d/m/Y",
+		defaultDate: moment("01/01/1990").format("DD/MM/YYYY"),
+		minDate: moment().subtract(60, "y").format("DD/MM/YYYY"),
+		maxDate: moment().format("DD/MM/YYYY"),
+	});
+}
+
+/* popup */
+
+$(".popup-section .close").click(function () {
+	$(".popup-section").hide();
+});
+/* 15-03-2021 start */
+/* lazy */
+var lazyLoadInstance = new LazyLoad({
+	elements_selector: ".lazy",
+});
+/* 15-03-2021 end */
+
+/*24/3/2021: Customer review steps form*/
+//commented below code because not used in page 27-10-21
+/* $(document).ready(function () {
+	var a = 51;
+	var b = 91;
+	var queryText = a + " + " + b + "?";
+	document.getElementById("queryString").innerHTML = queryText;
+	var result = parseInt(a) + parseInt(b);
+	document.getElementById("actualResult").value = result;
+}); */
+/* Star rating code */
+$("#customerreviewForm")
+	.find(".star-rating span")
+	.on("click", function () {
+		$(this).siblings().removeClass("checked");
+		$(this).prevAll().addClass("checked");
+		/* 08/04/2021 update */
+		$(this).hasClass("checked")
+			? $(this).addClass("checked")
+			: $(this).addClass("checked");
+		$(this)
+			.parent()
+			.next('input[name="rating"]')
+			.val($(this).parent().find(".checked").length);
+	});
+
+	// moved the code last section
+
+function validateForm() {
+	var x,
+		y,
+		i,
+		valid = true;
+	x = document.getElementsByClassName("tab");
+	var currTab = $(".tab.active");
+	currTab.find("input").each(function (index, ele) {
+		$(ele).removeClass("invalid");
+		if ($(ele).val() == "") {
+			$(ele).addClass("invalid");
+			$(ele).parent().next(".error").show();
+			valid = false;
+			return false;
+		} else {
+			$(ele).parent().next(".error").hide();
+			if ($(ele).attr("id") == "email") {
+				var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+				if (!regEmail.test($(ele).val())) {
+					valid = false;
+					$(ele).parent().next(".error").show();
+					return false;
+				}
+			} else if ($(ele).attr("id") == "result") {
+			} else {
+				if (
+					$(ele).attr("id") !== "rating" &&
+					!/^[a-zA-Z\s]*$/.test($(ele).val())
+				) {
+					valid = false;
+					$(ele).parent().next(".error").show();
+					return false;
+				}
+			}
+		}
+	});
+	var text_area = currTab.find("textarea");
+	if (text_area.length > 0) {
+		if (text_area.val() == "") {
+			text_area.siblings(".error").show();
+			valid = false;
+		} else {
+			if (text_area.val().length > 100) {
+				text_area.siblings(".error").html("Please enter 100 characters only");
+				valid = false;
+			}
+		}
+	}
+	/*     y = x[currentTab].getElementsByTagName("input");
+		for (i = 0; i < y.length; i++) {
+			if (y[i].value == "") {
+				y[i].className += " invalid";
+				//console.log(y[i].id);
+				valid = false;
+			}
+			else {
+				if (y[i].id == "email") {
+					console.log("email validation");
+					var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+					if (!regEmail.test(y[i].value)) {
+						console.log("email failed");
+						valid = false;
+						console.log(y[i].nextElementSibling);
+						y[i].nextElementSibling.style.display = "block";
+    
+					}
+				}
+				else {
+    
+				}
+    
+			}
+		} */
+	// If the valid status is true, mark the step as finished and valid:
+	if (valid) {
+		document.getElementsByClassName("tab")[currentTab].className += " finish";
+	}
+	return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+	var i,
+		x = document.getElementsByClassName("tab");
+	for (i = 0; i < x.length; i++) {
+		x[i].className = x[i].className.replace(" active", "");
+	}
+	x[n].className += " active";
+}
+//24/3/2021: ENd customer review steps form
+
+	
+
+var currentTab = 0; // Current tab is set to be the first tab (0)
+// Below showtab method is not using here so we are commenting, because getting undefined error Date : 25-10-21
+//showTab(currentTab); // Display the current tab
+function showTab(n) {
+	var x = document.getElementsByClassName("tab");
+	x[n].style.display = "block";
+	if (n == 0) {
+		document.getElementById("prevBtn").style.display = "none";
+	} else {
+		document.getElementById("prevBtn").style.display = "inline";
+	}
+	if (n == x.length - 1) {
+		document.getElementById("nextBtn").innerHTML = "Post A review";
+	} else {
+		document.getElementById("nextBtn").innerHTML = "Next";
+	}
+	fixStepIndicator(n);
+}
+
+function nextPrev(n) {
+	var x = document.getElementsByClassName("tab");
+	if (n == 1 && !validateForm()) return false;
+	x[currentTab].style.display = "none";
+	currentTab = currentTab + n;
+	if (currentTab >= x.length) {
+		/* document.getElementById("customerreviewForm").submit();*/
+		//$("#sucess-message1").show();
+		$("#customerreviewForm").hide();
+		$("#customerreviewForm #rating") &&
+			$("#customerreviewForm #rating").val() <= 3
+			? $("#sucess-message1").show()
+			: $("#sucess-message2").show();
+
+		return false;
+	}
+	showTab(currentTab);
+}
+
+

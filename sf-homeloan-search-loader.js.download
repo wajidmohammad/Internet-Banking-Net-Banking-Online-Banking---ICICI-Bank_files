@@ -1,0 +1,25 @@
+var sbaseURL="icicibanksmartsearch.senseforth.com/HLKHUB/";    //should not use http://
+//var sbaseURL = "localhost:8081/HLKHUB/";
+var jsFile = "smartsearch-v1.0.7.min.js"; //  minified js file
+
+var cssfile = "smartsearch-v1.0.5.min.css"; // minfied css file
+
+sbaseURL = "https://" + sbaseURL;
+
+function getStyleSheet(href) {
+  var link = document.createElement("link");
+  link.type = "text/css";
+  link.rel = "stylesheet";
+  link.href = href;
+  document.body.appendChild(link);
+}
+getStyleSheet(sbaseURL + cssfile);
+
+function getScript(src) {
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = sbaseURL + src;
+  document.body.appendChild(script);
+}
+
+getScript(jsFile);

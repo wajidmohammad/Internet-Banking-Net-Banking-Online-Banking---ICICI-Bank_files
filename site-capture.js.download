@@ -1,0 +1,27 @@
+	var currentURL = window.location.href;
+	let cookieURL = currentURL.split("/").pop().split(".").shift();
+	let page = currentURL.split("/").pop().split(".").shift();
+	var cookiesArray = document.cookie.split(";");
+	   for (var i = 0; i < cookiesArray.length; i++){
+		var valueArray = cookiesArray[i].split("=");
+		valueArray[0] = valueArray[0].replace(/^ /, '');
+		   if(valueArray[0] == page){
+				var setURL = document.value = decodeURIComponent(valueArray[1]);
+			}
+			
+	   //console.log(valueArray);
+	   }
+	    //console.log("Page URL = " + page);
+		//console.log("Set Url = " + setURL);
+		//console.log("Current URL = " + cookieURL);
+	if (setURL == cookieURL) $('.siteCapture').hide();
+	else {
+        $("#modal-close").click(function() {
+		var date = new Date();
+		var minutes = 5; // Set session in minutes
+		date.setTime(date.getTime() + (minutes * 60 * 1000));
+           $(".siteCapture").fadeOut(1000);
+           $.cookie(page,cookieURL, { expires: date });
+		   
+        });
+    }
