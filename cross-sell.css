@@ -1,0 +1,166 @@
+/** Cross sell popUp revamp : start **/ /** New Animation UI **/
+.sellAds {
+    position: fixed;
+    display: none !important;
+    bottom: 16px;
+    right: 21px;
+    padding: 5px 10px 10px 10px;
+    border: 1px solid #d6d6d6;
+    z-index: 9999;
+    font-size: 11px;
+    width: 203px;
+    background: #f5821f;
+    color: #fff;
+    /*text-align: center;*/
+    text-align: left;
+    border-radius: 4px;
+    -moz-box-shadow: 0 1px 5px 6px #c2bbbb;
+    -webkit-box-shadow: 0 1px 5px 6px #c2bbbb;
+    box-shadow: 0 1px 5px 6px #c2bbbb;
+}
+.displayblockClass{
+        display: block !important;
+}
+.sellAds p {
+    color: #fff !important;
+	margin:1em 0;
+	font-size:11px;
+}
+/*.sellAds div {
+    width: 92px !important;
+    float: none !important;
+    text-align: center;
+    display: inline-block;
+}*/
+
+.sellAds .btn.inline-btn {
+    border-radius: 4px;
+    /*padding: 7px 10px !important;*/
+    padding: 7px 5px !important;
+    height: auto !important;
+    line-height: normal !important;
+    background: #c01012;
+    color: #fff !important;
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-weight: bold;
+}
+.sellAds .btn.inline-btn:hover {
+    background: #fff;
+    color: #c01012 !important
+}
+.sellAds a {
+    /*background: #fff;
+    color: #f5821f;*/
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+.sellAds a:hover {
+    background: #f5821f;
+    color: #fff
+}
+.sellAds {
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    animation: fadeInRightBig 2s 1, pulse 1s ease-in-out 3s infinite alternate;
+    -webkit-animation: fadeInRightBig 2s 1, pulse 1s ease-in-out 3s infinite alternate;
+    -moz-animation: fadeInRightBig 2s 1, pulse 1s ease-in-out 2s infinite alternate;
+}
+.fadeclass {
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    animation: fadeOutRightBig 2s;
+    -webkit-animation: fadeOutRightBig 2s;
+    -moz-animation: fadeOutRightBig 2s;
+}
+.displynoneclass {
+    display: none !important;
+}
+@-webkit-keyframes fadeInRightBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(2000px)
+    }
+    
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0)
+    }
+}
+@keyframes fadeInRightBig {
+    from {
+        opacity: 0;
+        transform: translateX(2000px)
+    }
+    
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+@-webkit-keyframes pulse {
+    from {
+        transform: scale(1)
+    }
+    
+    to {
+        transform: scale(1.03)
+    }
+}
+@keyframes pulse {
+    from {
+        transform: scale(1)
+    }
+    
+    to {
+        transform: scale(1.03)
+    }
+}
+@-webkit-keyframes fadeOutRightBig {
+    from {
+        opacity: 1;
+        -webkit-transform: translateX(0)
+    }
+    
+    to {
+        opacity: 0;
+        -webkit-transform: translateX(2000px)
+    }
+}
+@keyframes fadeOutRightBig {
+    from {
+        opacity: 1;
+        transform: translateX(0)
+    }
+    
+    to {
+        opacity: 0;
+        transform: translateX(2000px)
+    }
+}
+.closeVisit {
+    background: #f5821f;
+    color: #fff !important;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: Arial,Helvetica,sans-serif;
+    display: block;
+    text-decoration: none !important;
+    z-index: 99999;
+}
+/** Cross sell popUp revamp : end **/
